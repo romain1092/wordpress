@@ -1,7 +1,8 @@
 FROM ubuntu
- MAINTAINER Roth Mathieu "mathieu_roth@hotmail.fr"
  RUN echo deb http://archive.ubuntu.com/ubuntu precise universe >> /etc/apt/sources.list
- RUN sudo apt-get update
- RUN sudo apt-get -y install php5-fpm
+ RUN  apt-get update
+ RUN  apt-get -y install php5-fpm
+ RUN ln -s /usr/sbin/php5-fpm /usr/sbin/php-fpm
+ RUN sed -i 's/;daemonize = yes/daemonize = no/g' /etc/php5/fpm/php-fpm.conf
 EXPOSE 9000
-ENTRYPOINT ["php-fpm","-F"]
+CMD ["php-fpm"]
