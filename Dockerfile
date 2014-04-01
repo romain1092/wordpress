@@ -4,4 +4,3 @@ FROM ubuntu
  RUN sudo apt-get update
  RUN sudo apt-get -y install php5-fpm
 EXPOSE 9000
-CMD ["php-fpm","-F"]
