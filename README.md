@@ -1,4 +1,4 @@
 wordpress
 =========
 
-Wordpress Haute Disponibilité
+Affichage de phpinfo() :
