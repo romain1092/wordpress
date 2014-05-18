@@ -18,3 +18,7 @@ Pour nginx : "docker run -d -p 9000:9000 phpfpm"
 Pour php-fpm : "docker run -d -p 80:80 nginx"
 
 l'option -d est le mode détaché et l'option -p permet de définir les différents ports utilisés.
+
+En allant dans un navigateur web, tapez l'adresse 127.0.0.1:5080, le "hello world" apparait. Puis tapez 127.0.0.1:5080/index.php, phpinfo() apparait.
+
+NANOU Romain
