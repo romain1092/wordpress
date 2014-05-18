@@ -13,9 +13,9 @@ Tapez ensuite la commande "git clone https://github.com/romain1092/wordpress" af
 
 Tapez les commandes suivantes pour builder les images récupérées précédemment :
 
-Pour mysql : "docker run -d -p 3306/3306 mysql"
-Pour nginx : "docker run -d -p 9000:9000 phpfpm"
-Pour php-fpm : "docker run -d -p 80:80 nginx"
+- Pour mysql : "docker run -d -p 3306/3306 mysql"
+- Pour nginx : "docker run -d -p 9000:9000 phpfpm"
+- Pour php-fpm : "docker run -d -p 80:80 nginx"
 
 l'option -d est le mode détaché et l'option -p permet de définir les différents ports utilisés.
 
